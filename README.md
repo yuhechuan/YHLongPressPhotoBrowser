@@ -38,11 +38,10 @@ Objective-C
 }
 
 __weak typeof(self) weakSelf = self;
-self.yhPhotoBrowser.bz_dataSource = ^(UIPinchGestureRecognizer * _Nonnull recognizer, LocationInTarget  _Nonnull locationInTarget) {
-       if (locationInTarget) {
-           locationInTarget(weakSelf.sinleImageView);
-       }
-   };
+self.photoBrowser.bz_dataSource = ^(UILongPressGestureRecognizer * _Nonnull recognizer, LocationInTarget  _Nonnull locationInTarget) {
+    [weakself locationInImageView:recognizer
+                 locationInTarget:locationInTarget];
+};
 ```
 #### 2.表情在CollectView上时
 ```
