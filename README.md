@@ -20,7 +20,7 @@ Objective-C
 
 其中主要用到了 UILongPressRecognizer 手势 支持自定义视图预览
 
-![功能展示图]()
+![功能展示图](https://github.com/yuhechuan/YHLongPressPhotoBrowser/blob/master/WechatIMG16781.jpeg)
 
 ### 使用方法
 ```
